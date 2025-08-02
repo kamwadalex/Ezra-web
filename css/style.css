@@ -255,10 +255,9 @@ body {
 
 /* Header and Navigation */
 header {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: transparent;
     color: white;
     padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -271,6 +270,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    margin: 10px auto;
 }
 
 .logo h2 {
@@ -288,7 +291,7 @@ header {
 .school-logo {
     height: 48px;
     width: auto;
-    border-radius: 6px;
+    border-radius: 12px;
     box-shadow: 0 2px 8px rgba(30,60,114,0.08);
     background: #fff;
     object-fit: contain;
@@ -330,7 +333,7 @@ header {
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: all 0.3s ease;
 }
 
@@ -758,6 +761,8 @@ footer {
 @media (max-width: 768px) {
     .nav-container {
         padding: 0 1rem;
+        margin: 10px 15px;
+        border-radius: 20px;
     }
     
     .nav-toggle {
@@ -775,6 +780,8 @@ footer {
         visibility: hidden;
         transition: all 0.3s ease;
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        border-radius: 0 0 20px 20px;
+        margin: 0 15px;
     }
     
     .nav-menu.active {
@@ -797,8 +804,9 @@ footer {
     .nav-menu ul li a {
         display: block;
         padding: 1rem 2rem;
-        border-radius: 0;
+        border-radius: 10px;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+        margin: 0 10px;
     }
     
     .nav-menu ul li a:hover {
@@ -855,6 +863,8 @@ footer {
 @media (max-width: 480px) {
     .nav-container {
         padding: 0 0.5rem;
+        margin: 10px 10px;
+        border-radius: 18px;
     }
     
     .logo h2 {
